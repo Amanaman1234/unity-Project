@@ -6,6 +6,7 @@ public class Movement : MonoBehaviour
 {
 
     public float links = 3;
+    public float rechts = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,10 @@ public class Movement : MonoBehaviour
         if (Input.GetKey("a"))
         {
             transform.Translate(-Vector3.right * links * Time.deltaTime);
+        }
+        if (Input.GetKey("d"))
+        {
+            transform.Translate(Vector3.right * rechts * Time.deltaTime);
         }
     }
 }
