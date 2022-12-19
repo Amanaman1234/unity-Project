@@ -24,5 +24,6 @@ public class Movement : MonoBehaviour
         {
             transform.Translate(Vector3.right * rechts * Time.deltaTime);
         }
+
     }
 }
